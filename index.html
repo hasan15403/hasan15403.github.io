@@ -4,8 +4,141 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hasan Khalid Baig | Achievements & Projects</title>
-  <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script>
+  <style>
+    /* CSS Styles */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background: linear-gradient(to right, #4CAF50, #388E3C);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .achievements-list,
+    .projects-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .achievement,
+    .project {
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .achievement:hover,
+    .project:hover {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-link {
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+
+    /* About Section Styles */
+    #about-me p {
+      margin-bottom: 20px;
+    }
+
+    #about-me ul {
+      list-style: square;
+      padding-left: 20px;
+    }
+
+    #about-me ul li {
+      margin-bottom: 10px;
+    }
+  </style>
+  <script>
+    // JavaScript interaction for alert on click
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.achievement, .project').forEach(item => {
+        item.addEventListener('click', () => {
+          alert(`You clicked on: ${item.querySelector('h3').innerText}`);
+        });
+      });
+    });
+  </script>
 </head>
 <body>
 
@@ -20,6 +153,7 @@
     <ul>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#about-me">About</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -60,6 +194,26 @@
             <a href="#" class="project-link">View Portfolio</a>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section id="about-me">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm Hasan Khalid Baig, a 3rd year Computer Engineering student at King Khalid University. I have a deep passion for technology, AI, and sustainable innovation. My goal is to leverage my skills in computer engineering to solve real-world problems, particularly in AI-driven solutions, waste management, and environmental sustainability.</p>
+
+        <p>Starting from my first year, I was always drawn towards projects that have a positive impact on society. From organizing AI camps for younger students to working on innovative projects like ALTA EcoSort, I aim to blend technology with a cause. I enjoy learning about cutting-edge technologies, and I'm constantly improving my skills in artificial intelligence, programming, and embedded systems.</p>
+
+        <h3>Skills</h3>
+        <ul>
+          <li>Artificial Intelligence & Machine Learning</li>
+          <li>Web Development (HTML, CSS, JavaScript)</li>
+          <li>Embedded Systems</li>
+          <li>Project Management</li>
+        </ul>
+
+        <h3>Hobbies</h3>
+        <p>When I'm not working on projects or attending university, I love reading about new technology trends, playing strategy video games, and spending time outdoors. I'm also very passionate about environmental conservation and am always on the lookout for ways to incorporate sustainability into my personal and professional life.</p>
       </div>
     </section>
   </main>
