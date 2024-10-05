@@ -31,26 +31,51 @@
       margin-bottom: 10px;
     }
 
-    header p {
-      font-size: 1.2rem;
+    nav {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     .container {
       width: 80%;
-      margin: 0 auto;
-      padding: 20px 0;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
 
     h2 {
-      font-size: 2.5rem;
       color: #333;
       margin-bottom: 20px;
     }
 
-    #about-me img {
-      width: 150px;
-      border-radius: 75px;
-      margin-bottom: 20px;
+    /* Image styles */
+    .profile-image {
+      width: 150px; /* Adjust the size as needed */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 75px; /* Make it circular */
+      margin-bottom: 20px; /* Space below the image */
+      display: block; /* Center the image */
+      margin-left: auto;
+      margin-right: auto;
     }
 
     footer {
@@ -66,27 +91,23 @@
     }
   </style>
 </head>
-<section id="about-me">
-    <div class="container">
-      <h2>About Me</h2>
-      <img src="myphoto.jpg" alt="Hasan Khalid Baig" style="width: 150px; border-radius: 75px; margin-bottom: 20px;">
-      <p>Hello! I'm Hasan Khalid Baig, a 3rd year Computer Engineering student at King Khalid University. I have a deep passion for technology, AI, and sustainable innovation. My goal is to leverage my skills in computer engineering to solve real-world problems, particularly in AI-driven solutions, waste management, and environmental sustainability.</p>
-      ...
-    </div>
-  </section>
 <body>
 
   <header>
-    <div class="container">
-      <h1>About Me</h1>
-      <p>Learn more about me and my journey!</p>
-    </div>
+    <h1>About Me</h1>
   </header>
 
-  <div class="container" id="about-me">
-    <img src="myphoto.jpg" alt="Hasan Khalid Baig">
-    <h2>Hello! I'm Hasan Khalid Baig</h2>
-    <p>A 3rd year Computer Engineering student at King Khalid University. I have a deep passion for technology, AI, and sustainable innovation. My goal is to leverage my skills in computer engineering to solve real-world problems, particularly in AI-driven solutions, waste management, and environmental sustainability.</p>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li> <!-- Link back to the home page -->
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>Hi, I'm Hasan Khalid Baig</h2>
+    <img src="myphoto.jpg" alt="Hasan Khalid Baig" class="profile-image"> <!-- Add your image here -->
+    
+    <p>I'm a 3rd year Computer Engineering student at King Khalid University. I have a deep passion for technology, AI, and sustainable innovation. My goal is to leverage my skills in computer engineering to solve real-world problems, particularly in AI-driven solutions, waste management, and environmental sustainability.</p>
 
     <h3>Skills</h3>
     <ul>
@@ -101,11 +122,8 @@
   </div>
 
   <footer>
-    <div class="container">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:444819958@kku.edu.sa">444819958@kku.edu.sa</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/hasan-khalid-baig-92b4a1230">Hasan Khalid Baig</a></p>
-    </div>
+    <p>Email: <a href="mailto:444819958@kku.edu.sa">444819958@kku.edu.sa</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/hasan-khalid-baig-92b4a1230">Hasan Khalid Baig</a></p>
   </footer>
 
 </body>
