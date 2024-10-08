@@ -1,1 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALTA EcoSort | Hasan Khalid Baig</title>
+  <style>
+    /* General Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #4CAF50, #388E3C);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    nav {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* ALTA EcoSort Section */
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    /* Animations for features */
+    .feature {
+      margin-bottom: 20px;
+      background-color: #f9f9f9;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* JavaScript Interactivity */
+    .collapsible {
+      cursor: pointer;
+      padding: 10px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.2rem;
+      background-color: #4CAF50;
+      color: white;
+      margin-top: 10px;
+      border-radius: 5px;
+    }
+
+    .collapsible:after {
+      content: '\002B'; /* Unicode character for "plus" sign (+) */
+      font-size: 1.2rem;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .collapsible.active:after {
+      content: "\2212"; /* Unicode for "minus" sign (-) */
+    }
+
+    .content {
+      padding: 0 15px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f1f1f1;
+      margin-bottom: 20px;
+      border-radius: 5px;
+    }
+
+    .content p {
+      padding: 10px;
+      margin: 0;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>ALTA EcoSort</h1>
+  </header>
+
+  <!-- Navigation Section -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#technology">Technology</a></li>
+      <li><a href="#impact">Impact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ALTA EcoSort Project Section -->
+  <div class="container" id="about">
+    <h2>About ALTA EcoSort</h2>
+    <p>ALTA EcoSort is an innovative AI-powered waste management system designed to revolutionize how waste is processed. The system uses sensors, cameras, and machine learning algorithms to sort trash into recyclable and biodegradable categories. By making waste sorting more efficient, ALTA EcoSort aims to reduce pollution, boost recycling efforts, and help households and industries contribute to a cleaner environment.</p>
+    
+    <img src="https://via.placeholder.com/600x300" alt="ALTA EcoSort Overview">
+  </div>
+
+  <!-- Features Section -->
+  <div class="container" id="features">
+    <h2>Key Features</h2>
+    <div class="feature">
+      <h3>AI-Powered Sorting</h3>
+      <p>Using advanced computer vision, the system identifies and categorizes waste into recyclable and biodegradable types, making waste sorting fully automated.</p>
+    </div>
+    <div class="feature">
+      <h3>Sensors and Cameras</h3>
+      <p>Sensors detect the weight and type of waste, while high-definition cameras scan the items for accurate identification.</p>
+    </div>
+    <div class="feature">
+      <h3>Web & Mobile Interface</h3>
+      <p>The EcoSort system includes a user-friendly web and mobile app interface, allowing users to monitor the waste they have sorted and track their environmental contributions over time.</p>
+    </div>
+  </div>
+
+  <!-- Technology Section -->
+  <div class="container" id="technology">
+    <h2>Technology Stack</h2>
+    <button class="collapsible">Hardware Components</button>
+    <div class="content">
+      <p>The system uses a conveyor belt, weight sensors, high-resolution cameras, and a microcontroller (e.g., Arduino) to control the process of waste sorting.</p>
+    </div>
+    
+    <button class="collapsible">Software Components</button>
+    <div class="content">
+      <p>It leverages machine learning models for image recognition (e.g., TensorFlow or OpenCV) and web technologies such as HTML, CSS, JavaScript for the user interface.</p>
+    </div>
+
+    <button class="collapsible">Mobile Integration</button>
+    <div class="content">
+      <p>The EcoSort app is built with React Native to offer a seamless mobile experience where users can track their waste contributions and receive notifications.</p>
+    </div>
+  </div>
+
+  <!-- Impact Section -->
+  <div class="container" id="impact">
+    <h2>Environmental Impact</h2>
+    <p>The ALTA EcoSort system reduces the volume of waste sent to landfills, promotes recycling, and encourages sustainable practices. By integrating waste sorting into everyday life, the system helps reduce pollution, conserve natural resources, and lower the carbon footprint.</p>
+
+    <h3>Key Benefits:</h3>
+    <ul>
+      <li>Reduces environmental pollution</li>
+      <li>Promotes recycling and reduces waste</li>
+      <li>Encourages sustainable waste management practices</li>
+    </ul>
+  </div>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>Email: <a href="mailto:hasankhalid15403@gmail.com">hasankhalid15403@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/hasan-khalid-baig-92b4a1230">Hasan Khalid Baig</a></p>
+  </footer>
+
+  <script>
+    // JavaScript for collapsible sections
+    var collapsibles = document.getElementsByClassName("collapsible");
+    for (var i = 0; i < collapsibles.length; i++) {
+      collapsibles[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
 
