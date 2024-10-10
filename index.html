@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hasan Khalid Baig | Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #f6aa1c;
+        }
+
+        /* Home Section */
+        .home-section {
+            height: 100vh;
+            background-image: linear-gradient(to right, #ff4e50, #f9d423);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .home-section h1 {
+            font-size: 48px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-100px); }
+            to { transform: translateY(0); }
+        }
+
+        .home-section p {
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .home-section button {
+            padding: 10px 30px;
+            background-color: #fff;
+            color: #333;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: transform 0.3s, background-color 0.3s;
+            font-size: 18px;
+        }
+
+        .home-section button:hover {
+            transform: scale(1.1);
+            background-color: #f6aa1c;
+            color: white;
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 80px 20px;
+            background-color: #00b4d8;
+            color: white;
+            text-align: center;
+        }
+
+        .about-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            padding: 80px 20px;
+            background-color: #06d6a0;
+            color: white;
+            text-align: center;
+        }
+
+        .projects-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .project-item {
+            margin-bottom: 30px;
+            animation: fadeInProject 1s ease-in-out;
+        }
+
+        @keyframes fadeInProject {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .project-item h3 {
+            font-size: 28px;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            padding: 80px 20px;
+            background-color: #ff477e;
+            color: white;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #contactForm {
+            display: inline-block;
+            text-align: left;
+            max-width: 500px;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            color: #333;
+        }
+
+        #contactForm label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        #contactForm input, #contactForm textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        #contactForm button {
+            padding: 10px 30px;
+            background-color: #ff4e50;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #contactForm button:hover {
+            background-color: #f9d423;
+            color: #333;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .home-section h1 {
+                font-size: 32px;
+            }
+
+            .home-section p {
+                font-size: 18px;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="intro">
+            <h1>Hi, I'm Hasan Khalid Baig</h1>
+            <p>Computer Engineering Student | Web Developer | AI Enthusiast</p>
+            <button onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>Hello! I'm a 3rd-year Computer Engineering student at King Khalid University. I have a passion for web development, AI, and solving real-world problems through technology. Currently, I'm working on several projects, including ALTA EcoSort, and I enjoy sharing my knowledge through workshops and presentations.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-item">
+            <h3>ALTA EcoSort</h3>
+            <p>A smart waste management system using AI and sensors to sort waste efficiently.</p>
+        </div>
+        <div class="project-item">
+            <h3>AI-powered Web Development Workshop</h3>
+            <p>Conducted a workshop on using AI tools to develop websites.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Hasan Khalid Baig. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scroll to sections
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+
+        // Contact form submission (basic validation)
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Message sent successfully!');
+                document.getElementById('contactForm').reset();
+            } else {
+                alert('Please fill out all fields.');
+            }
+        });
+    </script>
+</body>
+</html>
